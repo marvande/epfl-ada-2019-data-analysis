@@ -2,17 +2,18 @@
 
 ## Ignoring outputs in jupyter notebook: 
 
+
 ### Automatically: 
 Once you've activated your ada conda environment and you are in the git repo: 
 
 - $ conda install -c conda-forge nbstripout 
-- $ nbstripout --install --attributes .gitattributes
+- (Ignore this for now as I've added it to the attributes already, I think it should work like this $ nbstripout --install --attributes .gitattributes)
 
 
 I'd advise you install the plugin to do it automatically just to be sure, but if that does not work there still is the manual method below. 
 
 ### Manually: 
-In jupyter notebook, go to Kernel -> Restart & Clear Output
+In jupyter notebook, go to Kernel -> Restart & Clear Output \n
 Do this everytime before pushing!
 
 
