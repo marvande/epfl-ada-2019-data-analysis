@@ -28,7 +28,7 @@ List the dataset(s) you want to use, and some ideas on how do you expect to get,
 General idea : analyze the dataset in general, i.e. find general trends
 And for the milestone 3 : have done some ML analyses to identify big clusters of consumers depending on demographic data 
 - Week 1 : Clean up the data and prepare the sets we want to keep
-- Week 2 : Statistical analyses : identify the main trends and main household profiles. Define more in depth the possible relation in between shopping trends and household profiles.
+- Week 2 : Statistical analysis : identify the main trends and main household profiles. Define more in depth the possible relation (correlations, causality, dependencies etc.) in between shopping trends and household profiles.
 - Week 3 : Prepare the dataset for the clustering + clean the code and comment everything
 
 ### Questions for TAa
