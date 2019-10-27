@@ -2,9 +2,9 @@
 
 
 ## Repo structure: 
-- Code : contains the notebook and all other code we need
-- Data : contains data we create and the data we use (Attention you need to add the dataset yourself, see below in "Setting up your data)
-- Doc : contains all documentation like the leaflet from dunnhumby and more if needed. 
+- **Code** : contains the notebook and all other code we need
+- **Data** : contains data we create and the data we use (Attention you need to add the dataset yourself, see below in "Setting up your data)
+- **Doc** : contains all documentation like the leaflet from dunnhumby and more if needed. 
 
 
 ## Ignoring outputs in jupyter notebook: 
