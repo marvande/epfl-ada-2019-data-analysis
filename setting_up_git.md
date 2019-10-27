@@ -1,11 +1,13 @@
 # Small step by step to make sure you are ready to code ! 
 
-## Ignoring outputs in jupyter notebook: 
 
-### Repo structure: 
+## Repo structure: 
 - Code : contains the notebook and all other code we need
 - Data : contains data we create and the data we use (Attention you need to add the dataset yourself, see below in "Setting up your data)
 - Doc : contains all documentation like the leaflet from dunnhumby and more if needed. 
+
+
+## Ignoring outputs in jupyter notebook: 
 
 ### Automatically: 
 Once you've activated your ada conda environment and you are in the git repo: 
