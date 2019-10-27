@@ -24,6 +24,6 @@ Do this everytime before pushing!
 
 
 ## Setting up your data:
-Right now, no csv files are pushed to our repository. In case we need to push some small data we can still change that. Anyway, never ever push the dunnhumby data as they are too big for git. So that you have it available and ready on your laptop you need to : 
+Right now, no csv files are pushed to our repository. In case we need to push some small data we can still change that. Anyway, never ever push the dunnhumby data as they are too big for git (but this is included in the gitignore so you don't have to worry about it, but you never know. If you ever see an unwanted csv file in your "git status" don't push it ! Do a "git checkout"). So that you have it available and ready on your laptop you need to : 
 - downlaod the whole dataset "complete journey" from : https://www.dunnhumby.com/careers/engineering/sourcefiles
 - Copy only the **csv files** into **data/dunnhumby_complete_csv/** folder
