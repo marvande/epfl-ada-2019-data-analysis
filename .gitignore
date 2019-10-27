@@ -1,0 +1,7 @@
+#Don't track the content of these files: 
+
+#Original (BIG) dataframes
+data/dunnhumby_complete_csv/
+
+#Dataframes:
+*.csv
