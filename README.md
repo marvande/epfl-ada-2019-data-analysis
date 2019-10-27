@@ -8,14 +8,17 @@ We would like to analyse the Dunnhumby dataset. Living in a time and age where e
 
 ### Research questions
 *A list of research questions you would like to address during the project.*
-- What shopping trends can we find in this data ? 
-- Are consumer habits correlated with specific demographic parameters ? Which habits are the easiest to identify?
-- Can we predict some of these parameters by knowing the habbits (predict the age, etc) ? And vice-versa (e.g. predict the time of shopping)
+- What are the main shopping trends that we can identify in this data ? 
+- Can we relate shopping trends to specific demographic parameters ? 
+- Can we predict some of these demographic parameters (age, marital statute etc) with knowing the household's habbits? 
+- In the opposite way, can we predict household consumption behaviour with knowing its characteristics?
 - What accuracy in consumption prediction can the retailer obtain from a simple profile information? 
 
 ### Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
-- Dunnhumby, the complete journey : in this dataset 8 are provided, we are mostly going to focus on HH-demographic, Transactions and Product. There are also tables about specific marketing campains and their results but that's not what interests us most in our problematic. We plan to extract what products the households bought over the two years, when they bought it and the money ... (A COMPLETER) 
+-  The complete journey from Dunnhumby company: in this dataset 8 tables summarize the study of the company. We are going to focus mostly on HH-demographic, Transactions and Product tables. Dunnhumby also provides tables about specific marketing campains and their results. However our problematic is not marketing, but demographic oriented. That is why we decided not to include them in our analysis. We plan to extract households's habbits in term of consumption. That is to say their choices  of products, the budget they inject in their groceries, their consumer behaviors (when, how much, how fast, how often etc.). 
+We expect to identify a few number (3 to 6) of clusters where we will class the 
+
 
 ### A list of internal milestones up until project milestone 2
 *Add here a sketch of your planning for the next project milestone.*
