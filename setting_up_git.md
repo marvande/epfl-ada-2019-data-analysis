@@ -5,8 +5,8 @@
 ### Automatically: 
 Once you've activated your ada conda environment and you are in the git repo: 
 
-$ conda install -c conda-forge nbstripout
-$ nbstripout --install --attributes .gitattributes
+- $ conda install -c conda-forge nbstripout 
+- $ nbstripout --install --attributes .gitattributes
 
 
 I'd advise you install the plugin to do it automatically just to be sure, but if that does not work there still is the manual method below. 
