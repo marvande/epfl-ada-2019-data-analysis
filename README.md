@@ -17,7 +17,10 @@ We would like to analyse the Dunnhumby dataset. Living in a time and age where e
 ### Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 -  The complete journey from Dunnhumby company: in this dataset 8 tables summarize the study of the company. We are going to focus mostly on HH-demographic, Transactions and Product tables. Dunnhumby also provides tables about specific marketing campains and their results. However our problematic is not marketing, but demographic oriented. That is why we decided not to include them in our analysis. We plan to extract households's habbits in term of consumption. That is to say their choices  of products, the budget they inject in their groceries, their consumer behaviors (when, how much, how fast, how often etc.). 
-We expect to identify a few number (3 to 6) of clusters where we will class the 
+
+We expect to identify a few number (3 to 6) of shopping trend clusters that we can relate to some household profiles and vice-versa. To enrich our results, we would like if time allows us, to try fitting a model to predict the consumption profile of a random household. 
+
+Format of the data and data size to complete : 
 
 
 ### A list of internal milestones up until project milestone 2
