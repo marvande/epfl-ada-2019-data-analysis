@@ -1,4 +1,4 @@
-#Documentation: 
+# Documentation: 
 Folder contains all documentation needed to understand the code and notebooks. Contains: 
 - df_names : names of all dataframes used in the code with a small description
 - dunnhumby - The Complete Journey User Guide (pdf guide to the dataset)
