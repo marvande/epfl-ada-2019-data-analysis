@@ -2,6 +2,7 @@
 
 #Original (BIG) dataframes
 data/dunnhumby_complete_csv/
+code/.ipynb_checkpoints/
 
 #Things to avoid generally:
 #Can remove the csv if we want to add dataframes
