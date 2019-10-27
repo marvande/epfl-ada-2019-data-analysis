@@ -4,13 +4,14 @@
 
 ### Abstract
 *A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?*
-We would like to analyse the Dunnhumby dataset. Living in a time and age where every piece of our data is stored and analysed; and being active consumers ourselves, we would like to see what informations retail chains can gather and infer about us knowing only our shopping habits. As transactions over two years of several households **and** their basic demographic profiles are provided, we want to see if there are any links and correlations between specific demographics (e.g. marital status, income, number of children, etc) and purchase patterns. Furthermore, if time permits it, we want to see if we can create a model predicting a consumer demographic profile from their shopping. Thus, we would like to see how "easy" it actually is for retailers to infer who their customer is by what they buy and target them with specific marketing. Basically, we want to know how much of a target we actually are. 
+We would like to analyse the Dunnhumby dataset. Living in a time and age where every piece of our data is stored and analysed; and being active consumers ourselves, we would like to see what informations retail chains can gather and infer about us knowing only our shopping habits. As transactions over two years of several households **and** their basic demographic profiles are provided, we want to see if there are any links and correlations between specific demographics (e.g. marital status, income, number of children, etc) and purchase patterns. Furthermore, if time permits it, we want to see if we can create a model predicting a consumer demographic profile from their shopping. Thus, we would like to see how "easy" and how precise it actually is for retailers to infer who their customer is by what they buy and target them with specific marketing. Basically, we want to know how much of a target we actually are. 
 
 ### Research questions
 *A list of research questions you would like to address during the project.*
 - What shopping trends can we find in this data ? 
-- Are consumer habits correlated with specific demographic parameters ?
-- Can we predict some of these parameters by knowing the habits (predict the age, etc) ? And vice-versa (e.g. predict the time of shopping) 
+- Are consumer habits correlated with specific demographic parameters ? Which habits are the easiest to identify?
+- Can we predict some of these parameters by knowing the habbits (predict the age, etc) ? And vice-versa (e.g. predict the time of shopping)
+- What accuracy in consumption prediction can the retailer obtain from a simple profile information? 
 
 ### Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
