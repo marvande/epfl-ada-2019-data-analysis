@@ -31,6 +31,7 @@ Thus we plan to follow the programme below:
 - Until **14.11** : Study the shopping trends in this dataset : identify the main trends and main household profiles. 
 - Until **21.11** : Define more in depth the possible relation (correlations, causality, dependencies etc.) in between shopping trends and household profiles. 
 - Until **25.11** : Clean the code 
+
 If time permits it, we will prepare the dataset for the clustering and eventually begin it.
 Between milestone 2 and 3, we will really concentrate on the prediction analysis.
 
