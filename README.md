@@ -25,11 +25,14 @@ List the dataset(s) you want to use, and some ideas on how do you expect to get,
 
 ### A list of internal milestones up until project milestone 2
 *Add here a sketch of your planning for the next project milestone.*
-General idea : analyze the dataset in general, i.e. find general trends
-And for the milestone 3 : have done some ML analyses to identify big clusters of consumers depending on demographic data 
-- Week 1 : Clean up the data and prepare the sets we want to keep
-- Week 2 : Statistical analysis : identify the main trends and main household profiles. Define more in depth the possible relation (correlations, causality, dependencies etc.) in between shopping trends and household profiles.
-- Week 3 : Prepare the dataset for the clustering + clean the code and comment everything
+Until milestone 2, we plan to have done the cleaning of the data, and the analyses of the trends. 
+Thus we plan to follow the programme below:
+- Until _07.11_ : Clean up the data and prepare the sets we want to keep for the analysis
+- Until _14.11_ : Study the shopping trends in this dataset : identify the main trends and main household profiles. 
+- Until _21.11_ : Define more in depth the possible relation (correlations, causality, dependencies etc.) in between shopping trends and household profiles. 
+- Until _25.11_ : Clean the code 
+If time permits it, we will prepare the dataset for the clustering and eventually begin it.
+Between milestone 2 and 3, we will really concentrate on the prediction analysis.
 
 ### Questions for TAa
 Add here some questions you have for us, in general or project-specific.
