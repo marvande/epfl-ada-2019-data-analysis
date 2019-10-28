@@ -21,7 +21,6 @@ We would like to analyse the Dunnhumby dataset. Living in a time and age where e
 
 - We expect to identify a few number (3 to 6) of shopping trend clusters that we can relate to some household profiles and vice-versa. To enrich our results, we would like if time allows us, to try fitting a model to predict the consumption profile of a random household. 
 
-- Format of the data and data size A COMPLETER : 307MB
 
 
 ### A list of internal milestones up until project milestone 2
