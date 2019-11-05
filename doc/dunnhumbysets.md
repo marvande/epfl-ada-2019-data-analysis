@@ -1,7 +1,10 @@
 # Notes on the dunnhumby datasets we're gonna use: 
-## Note : total of 2500 households but only demographic data for 801 households. 
+## Note : 
+total of 2500 households but only demographic data for 801 households. 
 
-## hh-demographic: demographic info for a certain portion of households. 
+## hh-demographic: 
+demographic info for a certain portion of households. 
+
 Attributes: 
 - HOUSEHOLD_KEY : identifies each household, unique
 - AGE_DES: estimated age range
@@ -13,7 +16,8 @@ Attributes:
 - KID_CATEGORY_DESC: Number of children present up to 3+ 
 
 
-## transaction_data: all products purchased by households during the study. Each line in the table is what could essentially be found in a store reciept. 
+## transaction_data: 
+all products purchased by households during the study. Each line in the table is what could essentially be found in a store reciept. 
 
 Attributes: 
 
@@ -30,7 +34,8 @@ Attributes:
 - TRANS_TIME: time of day when transaction occured
 - WEEK_NO: week of the transaction. Ranges from 1-102. 
 
-## product: information on each product sold such as type of product, national or private label and a brand identifier. 
+## product: 
+information on each product sold such as type of product, national or private label and a brand identifier. 
 
 Attributes: 
 - PRODUCT_ID: unique, identifies product
