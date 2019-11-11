@@ -1,0 +1,442 @@
+Fruit,PRODUCE
+Vegetable,PRODUCE
+Corn,PRODUCE
+Mushroom,PRODUCE
+Broccoli,PRODUCE
+Cucumber,PRODUCE
+Red pepper,PRODUCE
+Pineapple,PRODUCE
+Tomato,PRODUCE
+Swede,PRODUCE
+Carrot,PRODUCE
+Brussels sprout,PRODUCE
+Pumpkin,PRODUCE
+Salad bulk,PRODUCE
+Cabbage,PRODUCE
+Onion,PRODUCE
+Potato,PRODUCE
+Eggplant,PRODUCE
+Sweet potato,PRODUCE
+Turnip,PRODUCE
+Courgette/zucchini,PRODUCE
+Green chilli,PRODUCE
+Onion,PRODUCE
+Lettuce,PRODUCE
+Radish,PRODUCE
+Pea,PRODUCE
+Asparagus,PRODUCE
+Celery,PRODUCE
+Green pepper,PRODUCE
+French beans,PRODUCE
+Spinach,PRODUCE
+Beetroot,PRODUCE
+Red chillies,PRODUCE
+Bean,PRODUCE
+Apple,PRODUCE
+Watermelon,PRODUCE
+Orange,PRODUCE
+Pear,PRODUCE
+Cherry,PRODUCE
+Strawberry,PRODUCE
+Nectarine,PRODUCE
+Cranberry,PRODUCE
+Grape,PRODUCE
+Mango,PRODUCE
+Blueberry,PRODUCE
+Pomegranate,PRODUCE
+Carambola,PRODUCE
+Plum,PRODUCE
+Banana,PRODUCE
+Raspberry,PRODUCE
+Mandarin,PRODUCE
+Jackfruit,PRODUCE
+Papaya,PRODUCE
+Kiwi,PRODUCE
+Pineapple,PRODUCE
+Lime,PRODUCE
+Lemon,PRODUCE
+Apricot,PRODUCE
+Grapefruit,PRODUCE
+Melon,PRODUCE
+Coconut,PRODUCE
+Avocado,PRODUCE
+Peach,PRODUCE
+Rice,PRODUCE
+Pasta,PRODUCE
+Lentil,PRODUCE
+Mix,FAST FOOD & SNACKS
+Dinner,FAST FOOD & SNACKS
+Snack,FAST FOOD & SNACKS
+Sandwich,FAST FOOD & SNACKS
+Pita,FAST FOOD & SNACKS
+Hamburger,FAST FOOD & SNACKS
+Fried chicken,FAST FOOD & SNACKS
+French fries,FAST FOOD & SNACKS
+Onion ring,FAST FOOD & SNACKS
+Chicken nugget,FAST FOOD & SNACKS
+Taco,FAST FOOD & SNACKS
+Pizza,FAST FOOD & SNACKS
+soup,FAST FOOD & SNACKS
+Hot dog,FAST FOOD & SNACKS
+Ice cream,FAST FOOD & SNACKS
+biscuit/cookie/cracker,FAST FOOD & SNACKS
+cake,FAST FOOD & SNACKS
+chip/crisp,FAST FOOD & SNACKS
+chocolate,FAST FOOD & SNACKS
+dried-fruit,FAST FOOD & SNACKS
+ice cream,FAST FOOD & SNACKS
+muesli bar,FAST FOOD & SNACKS
+muffin,FAST FOOD & SNACKS
+Brownie,FAST FOOD & SNACKS
+Waffle,FAST FOOD & SNACKS
+pastry,FAST FOOD & SNACKS
+popcorn,FAST FOOD & SNACKS
+Honey,FAST FOOD & SNACKS
+sweets/lollies/candy,FAST FOOD & SNACKS
+Nutella,FAST FOOD & SNACKS
+Spread,FAST FOOD & SNACKS
+Canned,FAST FOOD & SNACKS
+Prepared,FAST FOOD & SNACKS
+Cereal,FAST FOOD & SNACKS
+BAKERY,BAKERY
+White bread,BAKERY
+Wheat bread,BAKERY
+Whole grain bread,BAKERY
+Rye bread,BAKERY
+Hot dog bun,BAKERY
+Hamburger bun,BAKERY
+Croissant,BAKERY
+Swiss roll/jelly roll,BAKERY
+Pretzel,BAKERY
+Bagel,BAKERY
+Donut,BAKERY
+Roll,BAKERY
+Breadstick,BAKERY
+French bread/baguette,BAKERY
+SPICE/HERBS,SPICE/HERBS
+Cilantro/coriander,SPICE/HERBS
+Artichoke,SPICE/HERBS
+Rosemary,SPICE/HERBS
+Bay leaves,SPICE/HERBS
+Mint leaves,SPICE/HERBS
+Basil,SPICE/HERBS
+Clove,SPICE/HERBS
+Olive,SPICE/HERBS
+Shallot,SPICE/HERBS
+Turmeric,SPICE/HERBS
+Seasoning,SPICE/HERBS
+Garlic,SPICE/HERBS
+Ginger,SPICE/HERBS
+Spring onions,SPICE/HERBS
+Lemongrass,SPICE/HERBS
+Chives,SPICE/HERBS
+Green chili,SPICE/HERBS
+Beverage,BEVERAGES
+Wine,BEVERAGES
+Coffee,BEVERAGES
+Lemonade,BEVERAGES
+Iced tea,BEVERAGES
+Hot chocolate,BEVERAGES
+Juice,BEVERAGES
+Milkshake,BEVERAGES
+Water,BEVERAGES
+Tea,BEVERAGES
+Milk,BEVERAGES
+Beer,BEVERAGES
+Soda,BEVERAGES
+Tea,BEVERAGES
+Green tea,BEVERAGES
+Smoothie,BEVERAGES
+Lemonade,BEVERAGES
+Cocoa,BEVERAGES
+Water,BEVERAGES
+Drink,BEVERAGES
+Household,HOUSEHOLDS
+Measuring jug,HOUSEHOLDS
+Toothpaste,HOUSEHOLDS
+Toothbrush,HOUSEHOLDS
+Soap,HOUSEHOLDS
+Clothes peg,HOUSEHOLDS
+Hanger,HOUSEHOLDS
+Hair dryer,HOUSEHOLDS
+Shampoo,HOUSEHOLDS
+Polish,HOUSEHOLDS
+Houseware,HOUSEHOLDS
+Cookware,HOUSEHOLDS
+Brush,HOUSEHOLDS
+Toilet,HOUSEHOLDS
+Towel,HOUSEHOLDS
+Clothesline,HOUSEHOLDS
+Shower,HOUSEHOLDS
+Bathtub,HOUSEHOLDS
+Laundry detergent,HOUSEHOLDS
+Bucket,HOUSEHOLDS
+Mop,HOUSEHOLDS
+Soapy water,HOUSEHOLDS
+Detergent,HOUSEHOLDS
+Washing powder,HOUSEHOLDS
+Trash bag,HOUSEHOLDS
+Trash can,HOUSEHOLDS
+Sink,HOUSEHOLDS
+Toilet,HOUSEHOLDS
+Washing machine,HOUSEHOLDS
+Laundry basket,HOUSEHOLDS
+Razor,HOUSEHOLDS
+Electric razor,HOUSEHOLDS
+Shaving cream,HOUSEHOLDS
+Mouthwash,HOUSEHOLDS
+Q-tip,HOUSEHOLDS
+Hair brush,HOUSEHOLDS
+Comb,HOUSEHOLDS
+Cleanser,HOUSEHOLDS
+Scale,HOUSEHOLDS
+Tissue,HOUSEHOLDS
+Bath toys,HOUSEHOLDS
+Faucet,HOUSEHOLDS
+Mirror,HOUSEHOLDS
+Bath mat,HOUSEHOLDS
+Dish towel,HOUSEHOLDS
+Iron,HOUSEHOLDS
+Ironing board,HOUSEHOLDS
+Scrub brush,HOUSEHOLDS
+Cloth,HOUSEHOLDS
+Sponge,HOUSEHOLDS
+Laundry soap,HOUSEHOLDS
+Laundry detergent,HOUSEHOLDS
+Bleach,HOUSEHOLDS
+Liquid soap,HOUSEHOLDS
+Rubber gloves,HOUSEHOLDS
+Trash,HOUSEHOLDS
+Broom,HOUSEHOLDS
+Dustpan,HOUSEHOLDS
+Mop,HOUSEHOLDS
+Squeegee mop,HOUSEHOLDS
+Hose,HOUSEHOLDS
+Bucket,HOUSEHOLDS
+Laundry basket,HOUSEHOLDS
+Washing machine,HOUSEHOLDS
+maker,HOUSEHOLDS
+Blender,HOUSEHOLDS
+Mixer,HOUSEHOLDS
+Frizzer,HOUSEHOLDS
+Toaster,HOUSEHOLDS
+Microwave,HOUSEHOLDS
+Crock pot,HOUSEHOLDS
+Rice cooker,HOUSEHOLDS
+cooker,HOUSEHOLDS
+Bachelor griller,HOUSEHOLDS
+Stove,HOUSEHOLDS
+Lamp,HOUSEHOLDS
+Light bulb,HOUSEHOLDS
+Lantern,HOUSEHOLDS
+Torch,HOUSEHOLDS
+iron,HOUSEHOLDS
+Electric drill,HOUSEHOLDS
+Kettle,HOUSEHOLDS
+purifier,HOUSEHOLDS
+Kitchen hood,HOUSEHOLDS
+guitar,HOUSEHOLDS
+Vacuum cleaner,HOUSEHOLDS
+Electric fan,HOUSEHOLDS
+cooler,HOUSEHOLDS
+conditioner,HOUSEHOLDS
+Oven,HOUSEHOLDS
+Dishwasher,HOUSEHOLDS
+Television,HOUSEHOLDS
+Speaker,HOUSEHOLDS
+dryer,HOUSEHOLDS
+Apron,HOUSEHOLDS
+basket,HOUSEHOLDS
+Bowl,HOUSEHOLDS
+Teapot,HOUSEHOLDS
+Measuring cup,HOUSEHOLDS
+Baking tray,HOUSEHOLDS
+Timer,HOUSEHOLDS
+container,HOUSEHOLDS
+Chopping board,HOUSEHOLDS
+Grater,HOUSEHOLDS
+Insecticide,HOUSEHOLDS
+plate,HOUSEHOLDS
+spinner,HOUSEHOLDS
+Colander,HOUSEHOLDS
+dish,HOUSEHOLDS
+Oven glove,HOUSEHOLDS
+Napkin,HOUSEHOLDS
+Deodorant,HOUSEHOLDS
+Air sanitizer,HOUSEHOLDS
+Chopsticks,HOUSEHOLDS
+Rolling pin,HOUSEHOLDS
+Measuring spoon,HOUSEHOLDS
+Whisk,HOUSEHOLDS
+Wooden spoon,HOUSEHOLDS
+Strainer,HOUSEHOLDS
+Spoon,HOUSEHOLDS
+Spatula,HOUSEHOLDS
+Mesh skimmer,HOUSEHOLDS
+Cleaver,HOUSEHOLDS
+Ladle,HOUSEHOLDS
+Knife,HOUSEHOLDS
+Kitchen shears,HOUSEHOLDS
+Fork,HOUSEHOLDS
+Cutlery,HOUSEHOLDS
+Corkscrew,HOUSEHOLDS
+Saucepan,HOUSEHOLDS
+Plastic,HOUSEHOLDS
+Frying,HOUSEHOLDS
+Cooker,HOUSEHOLDS
+Care,HOUSEHOLDS
+Batteries,HOUSEHOLDS
+Pet food,PET
+Bird seed,PET
+Dog food,PET
+Cat food,PET
+Hard drive,TECHNOLOGY
+Microphone,TECHNOLOGY
+Digital camera,TECHNOLOGY
+Headphones,TECHNOLOGY
+Memory stick,TECHNOLOGY
+Floppy disc,TECHNOLOGY
+Router,TECHNOLOGY
+Computer,TECHNOLOGY
+Laptop,TECHNOLOGY
+Memory card,TECHNOLOGY
+Printer,TECHNOLOGY
+Video,TECHNOLOGY
+EGG,DAIRY
+Milk,DAIRY
+cream,DAIRY
+yogurt,DAIRY
+sour cream,DAIRY
+cottage cheese,DAIRY
+cheese,DAIRY
+mozzarella,DAIRY
+cheddar,DAIRY
+ricotta,DAIRY
+provolone,DAIRY
+Parmesan,DAIRY
+feta,DAIRY
+Margarine,DAIRY
+havarti,DAIRY
+Brie,DAIRY
+Butter,DAIRY
+Camembert,DAIRY
+brick,DAIRY
+Muenster,DAIRY
+goat cheese,DAIRY
+fresh curd,DAIRY
+processed cheese,DAIRY
+dairy,DAIRY
+whey powder,DAIRY
+lactose,DAIRY
+Bacon,MEAT & SEAFOOD
+beef,MEAT & SEAFOOD
+chicken,MEAT & SEAFOOD
+chicken breast,MEAT & SEAFOOD
+chicken leg,MEAT & SEAFOOD
+chicken wing,MEAT & SEAFOOD
+ham,MEAT & SEAFOOD
+hamburger,MEAT & SEAFOOD
+heart,MEAT & SEAFOOD
+hot dog,MEAT & SEAFOOD
+kidney,MEAT & SEAFOOD
+lamb chop,MEAT & SEAFOOD
+mutton,MEAT & SEAFOOD
+pork,MEAT & SEAFOOD
+roast,MEAT & SEAFOOD
+sausage,MEAT & SEAFOOD
+steak,MEAT & SEAFOOD
+turkey,MEAT & SEAFOOD
+veal,MEAT & SEAFOOD
+venison,MEAT & SEAFOOD
+Seafood,MEAT & SEAFOOD
+meat,MEAT & SEAFOOD
+FISH,MEAT & SEAFOOD
+salmon,MEAT & SEAFOOD
+calamari,MEAT & SEAFOOD
+crab,MEAT & SEAFOOD
+fish,MEAT & SEAFOOD
+lobster,MEAT & SEAFOOD
+octopus,MEAT & SEAFOOD
+prawns/shrimp,MEAT & SEAFOOD
+shellfish,MEAT & SEAFOOD
+Frozen food,FROZEN
+Frzn food,FROZEN
+Oil,CONDIMENTS
+Vegetal oil,CONDIMENTS
+Salad oil,CONDIMENTS
+Salt,CONDIMENTS
+Sauce,CONDIMENTS
+Chutney,CONDIMENTS
+Paste,CONDIMENTS
+Syrup,CONDIMENTS
+Ketchup,CONDIMENTS
+Mayonnaise,CONDIMENTS
+Mustard,CONDIMENTS
+Flour,CONDIMENTS
+Brown Sugar,CONDIMENTS
+Vinegar,CONDIMENTS
+Pickle,CONDIMENTS
+Stationery,STATIONERY
+Stapler,STATIONERY
+Eraser,STATIONERY
+Push-pin,STATIONERY
+Thumbtack,STATIONERY
+clip,STATIONERY
+Rubber stamp,STATIONERY
+Highlighter,STATIONERY
+pen,STATIONERY
+Pencil,STATIONERY
+Marker,STATIONERY
+Ballpoint,STATIONERY
+Tape dispenser,STATIONERY
+sharpener,STATIONERY
+Label,STATIONERY
+Calculator,STATIONERY
+Glue,STATIONERY
+Scissors,STATIONERY
+Sticky notes,STATIONERY
+Paper,STATIONERY
+Notebook,STATIONERY
+Envelope,STATIONERY
+Clipboard,STATIONERY
+Folder,STATIONERY
+Wastebasket,STATIONERY
+Magazine,STATIONERY
+Book,STATIONERY
+Runny nose,PHARMACY
+Bruise,PHARMACY
+Sunburn,PHARMACY
+Chills,PHARMACY
+Backache,PHARMACY
+Nausea,PHARMACY
+Flu,PHARMACY
+Stomachache,PHARMACY
+Fever,PHARMACY
+Snakebite,PHARMACY
+Cough,PHARMACY
+Solution,PHARMACY
+Oral rinse,PHARMACY
+Cough syrup,PHARMACY
+Antiseptic,PHARMACY
+Lotion,PHARMACY
+Decongestant,PHARMACY
+Ointment,PHARMACY
+Eye drops,PHARMACY
+Effervescent,PHARMACY
+Aspirin,PHARMACY
+Capsule,PHARMACY
+Tape,PHARMACY
+Bandage,PHARMACY
+Dietary,PHARMACY
+Baby food,PHARMACY
+Vitamins,PHARMACY
+Facial,PHARMACY
+Laxative,PHARMACY
+Analgesic,PHARMACY
+Moisturizer,PHARMACY
+Cigarette,SMOKING
+Cigare,SMOKING
+Smoke,SMOKING
+Filters,SMOKING
+Tobacco,SMOKING
+Smoking,SMOKING
