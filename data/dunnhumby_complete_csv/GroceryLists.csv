@@ -156,6 +156,7 @@ Measuring jug,HOUSEHOLDS
 Toothpaste,HOUSEHOLDS
 Toothbrush,HOUSEHOLDS
 Soap,HOUSEHOLDS
+Home,HOUSEHOLDS
 Clothes peg,HOUSEHOLDS
 Hanger,HOUSEHOLDS
 Hair dryer,HOUSEHOLDS
@@ -430,6 +431,7 @@ Bandage,PHARMACY
 Dietary,PHARMACY
 Baby food,PHARMACY
 Vitamins,PHARMACY
+First aid,PHARMACY
 Facial,PHARMACY
 Laxative,PHARMACY
 Analgesic,PHARMACY
