@@ -10,6 +10,8 @@ code/.ipynb_checkpoints/
 
 # it's better to unpack these files and commit the raw source
 
+.DS_Store
+*.DS_Store
 *.csv
 *.7z
 *.dmg
