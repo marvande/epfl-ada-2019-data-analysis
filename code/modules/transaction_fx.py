@@ -46,7 +46,7 @@ create_weekly_cart_df: creates a dataframe with average weekly quantities of eac
 
 @output: see above. 
 """
-def create_weekly_cart_df(trans_clean):
+def create_weekly_cart_df(trans_clean, participation_per_hh):
     grouped_per_label = pd.DataFrame(trans_clean.groupby(['LABEL','household_key']).sum())
     
     index = trans_clean['household_key'].sort_values().unique()
