@@ -24,35 +24,55 @@ def cat_count_plot(to_be_plotted, title):
     axs.set(title = title)
 
 """
-plot_box_dist: plots the boxplot and distribution of an entered series. 
-
+corr_function_plot: calculates the correlation between 2 variables and adds it on the scatter plot. 
 @input: 
-- to_be_plotted: panda series from which we want to plot the distribution and boxplot
-- title: title we want to give the plot
-- xlabel: label for x axis
+- x: first variable
+- y: second variable
+- **kwargs
+@output: see above. 
+""" 
+def corr_function_plot(x, y, **kwargs):
+    
+    # Calculate the value
+    coef = np.corrcoef(x, y)[0][1]
+    # Make the label
+    label = r'$\rho$ = ' + str(round(coef, 2))
+    
+    # Add the label to the plot
+    ax = plt.gca()
+    ax.annotate(label, xy = (0.2, 1), size = 10, xycoords = ax.transAxes)
+
+
+"""
+double_categorical_scatter: does a double categorical scatter plot. 
+@input: 
+- to_be_plotted1x, to_be_plotted1y: data for first categorical scatter plot
+- to_be_plotted2x, to_be_plotted2y: data for second categorical scatter plot
+- titles = array of titles for plots
+- add_mean = True if we want to add the mean on the plots. 
 
 @output: see above. 
 """
-def plot_box_dist(to_be_plotted, title, xlabel):
-    f, axes = plt.subplots(2, 1, sharex = 'col', gridspec_kw = {"height_ratios": (0.2, 2)}, figsize = (5,5))
+def double_categorical_scatter(to_be_plotted1x, to_be_plotted1y, to_be_plotted2x, to_be_plotted2y, titles, add_mean = False):
+    fig, axs = plt.subplots(1,2, figsize = (18,6))
     
-    mean = to_be_plotted.mean()
-    median = to_be_plotted.median()
+    sns.swarmplot(x = to_be_plotted1x, y = to_be_plotted1y, ax = axs[0])
+    if add_mean: 
+        axs[0].axhline(to_be_plotted1y.mean(), color = 'r', linestyle = '--')
     
-    sns.boxplot(to_be_plotted, ax = axes[0])
-    axes[0].axvline(mean, color = 'r', linestyle='--')
-    axes[0].axvline(median, color = 'g', linestyle='-')
+    sns.swarmplot(x = to_be_plotted2x, y = to_be_plotted2y, ax = axs[1])
+    if add_mean: 
+        axs[1].axhline(to_be_plotted2y.mean(), color = 'r', linestyle = '--')
+        plt.legend({'Mean': mean})
+    
+    #Rotate labels: 
+    axs[0].set_xticklabels(axs[0].get_xticklabels(), rotation = 45, horizontalalignment = 'right')
+    axs[1].set_xticklabels(axs[1].get_xticklabels(), rotation = 45, horizontalalignment = 'right')
 
-    sns.distplot(to_be_plotted, ax = axes[1])
-    axes[1].axvline(mean, color = 'r', linestyle='--')
-    axes[1].axvline(median, color = 'g', linestyle='-')
+    axs[0].set(title = titles[0])
+    axs[1].set(title =  titles[1])
 
-    plt.legend({'Mean':mean,'Median':median})
-
-    axes[0].set(xlabel = '', title = title)
-    axes[1].set(xlabel = xlabel)
-
-    plt.show()
+   
 
 """
 double_plot_box_dist: does a double box plot with distribution with a shared x axis. 
@@ -96,30 +116,43 @@ def double_plot_box_dist(to_be_plotted1, to_be_plotted2, titles, xlabels):
     plt.show()
 
 """
-double_categorical_scatter: does a double categorical scatter plot. 
+pair_corr_plot: plots a pair plot with the scatter plots and correlation coefficients off diagonal, and histograms on the diagonal. 
 @input: 
-- to_be_plotted1x, to_be_plotted1y: data for first categorical scatter plot
-- to_be_plotted2x, to_be_plotted2y: data for second categorical scatter plot
-- titles = array of titles for plots
-- add_mean = True if we want to add the mean on the plots. 
+- to_be_plotted : the dataframe with each column being one variable. 
+- correlation_function : the correlation function which is used 
+@output: see above. 
+""" 
+def pair_corr_plot(to_be_plotted, correlation_function = corr_function_plot):
+    fig = sns.pairplot(to_be_plotted)
+    fig = fig.map_offdiag(correlation_function)   
+
+"""
+plot_box_dist: plots the boxplot and distribution of an entered series. 
+
+@input: 
+- to_be_plotted: panda series from which we want to plot the distribution and boxplot
+- title: title we want to give the plot
+- xlabel: label for x axis
 
 @output: see above. 
 """
-def double_categorical_scatter(to_be_plotted1x, to_be_plotted1y, to_be_plotted2x, to_be_plotted2y, titles, add_mean = False):
-    fig, axs = plt.subplots(1,2, figsize = (18,6))
+def plot_box_dist(to_be_plotted, title, xlabel):
+    f, axes = plt.subplots(2, 1, sharex = 'col', gridspec_kw = {"height_ratios": (0.2, 2)}, figsize = (5,5))
     
-    sns.swarmplot(x = to_be_plotted1x, y = to_be_plotted1y, ax = axs[0])
-    if add_mean: 
-        axs[0].axhline(to_be_plotted1y.mean(), color = 'r', linestyle = '--')
+    mean = to_be_plotted.mean()
+    median = to_be_plotted.median()
     
-    sns.swarmplot(x = to_be_plotted2x, y = to_be_plotted2y, ax = axs[1])
-    if add_mean: 
-        axs[1].axhline(to_be_plotted2y.mean(), color = 'r', linestyle = '--')
-        plt.legend({'Mean': mean})
-    
-    #Rotate labels: 
-    axs[0].set_xticklabels(axs[0].get_xticklabels(), rotation = 45, horizontalalignment = 'right')
-    axs[1].set_xticklabels(axs[1].get_xticklabels(), rotation = 45, horizontalalignment = 'right')
+    sns.boxplot(to_be_plotted, ax = axes[0])
+    axes[0].axvline(mean, color = 'r', linestyle='--')
+    axes[0].axvline(median, color = 'g', linestyle='-')
 
-    axs[0].set(title = titles[0])
-    axs[1].set(title =  titles[1])
+    sns.distplot(to_be_plotted, ax = axes[1])
+    axes[1].axvline(mean, color = 'r', linestyle='--')
+    axes[1].axvline(median, color = 'g', linestyle='-')
+
+    plt.legend({'Mean':mean,'Median':median})
+
+    axes[0].set(xlabel = '', title = title)
+    axes[1].set(xlabel = xlabel)
+
+    plt.show()
