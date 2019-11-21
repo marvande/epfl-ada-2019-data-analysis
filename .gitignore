@@ -4,16 +4,14 @@
 #Original (BIG) dataframes
 data/dunnhumby_complete_csv/
 code/.ipynb_checkpoints/
-modules/__pycache__/
+code/modules/__pycache__/
 *.py[cod]
-
 #Things to avoid generally:
 #Can remove the csv if we want to add dataframes
 *.csv
 
 # it's better to unpack these files and commit the raw source
-
-.DS_Store
+*.pyc
 *.DS_Store
 *.csv
 *.7z
@@ -24,7 +22,6 @@ modules/__pycache__/
 *.jar
 *.rar
 *.tar
-
 *.exe
 *.o
 *.so
