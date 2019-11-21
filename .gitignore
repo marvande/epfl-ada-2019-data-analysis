@@ -1,9 +1,11 @@
 #Don't track the content of these files: 
 
+
 #Original (BIG) dataframes
 data/dunnhumby_complete_csv/
 code/.ipynb_checkpoints/
 modules/__pycache__/
+*.py[cod]
 
 #Things to avoid generally:
 #Can remove the csv if we want to add dataframes
