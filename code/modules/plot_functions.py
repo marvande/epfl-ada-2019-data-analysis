@@ -123,3 +123,34 @@ def double_categorical_scatter(to_be_plotted1x, to_be_plotted1y, to_be_plotted2x
 
     axs[0].set(title = titles[0])
     axs[1].set(title =  titles[1])
+    
+"""
+corr_function_plot: calculates the correlation between 2 variables and adds it on the scatter plot. 
+@input: 
+- x: first variable
+- y: second variable
+- **kwargs
+@output: see above. 
+""" 
+def corr_function_plot(x, y, **kwargs):
+    
+    # Calculate the value
+    coef = np.corrcoef(x, y)[0][1]
+    # Make the label
+    label = r'$\rho$ = ' + str(round(coef, 2))
+    
+    # Add the label to the plot
+    ax = plt.gca()
+    ax.annotate(label, xy = (0.2, 1), size = 10, xycoords = ax.transAxes)
+
+"""
+pair_corr_plot: plots a pair plot with the scatter plots and correlation coefficients off diagonal, and histograms on the diagonal. 
+@input: 
+- to_be_plotted : the dataframe with each column being one variable. 
+- correlation_function : the correlation function which is used 
+@output: see above. 
+""" 
+def pair_corr_plot(to_be_plotted, correlation_function = corr_function_plot):
+    fig = sns.pairplot(to_be_plotted)
+    fig = fig.map_offdiag(correlation_function)
+
