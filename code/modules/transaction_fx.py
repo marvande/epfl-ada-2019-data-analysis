@@ -26,18 +26,49 @@ def bud_total_per_year(grouped_trans_spent, trans_clean_hous_ind):
     return df
 
 """
-mean_yearly_spending: calculates the mean of yearly spending per household
+correlation_ratio: calculates a correlation coefficient between a categorical variable and a continuous variable. 
 @input: 
-- budget_first_year, budget_second_year: spending per household for year 1 and 2
+- categories: categorical array
+- measurements: continuous array
+
+@output: correlation coefficient between 0 and 1
 """
-def mean_yearly_spending(budget_first_year, budget_second_year):
-    mean_yearly_spend = budget_first_year.join(budget_second_year, lsuffix='_1')
-    
-    mean_yearly_spend['mean yearly spending'] = mean_yearly_spend.mean(axis=1)
-    
-    mean_yearly_spend = mean_yearly_spend.drop(
-        ['yearly spending', 'yearly spending_1'], axis=1)
-    return mean_yearly_spend
+def correlation_ratio(categories, measurements):
+    fcat, _ = pd.factorize(categories)
+    cat_num = np.max(fcat) + 1
+    y_avg_array = np.zeros(cat_num)
+    n_array = np.zeros(cat_num)
+    for i in range(0, cat_num):
+        cat_measures = measurements.iloc[np.argwhere(fcat == i).flatten()]
+        n_array[i] = len(cat_measures)
+        y_avg_array[i] = np.average(cat_measures)
+
+    y_total_avg = np.sum(np.multiply(y_avg_array, n_array)) / np.sum(n_array)
+    numerator = np.sum(
+        np.multiply(n_array, np.power(np.subtract(y_avg_array, y_total_avg),
+                                      2)))
+    denominator = np.sum(np.power(np.subtract(measurements, y_total_avg), 2))
+    if numerator == 0:
+        eta = 0.0
+    else:
+        eta = np.sqrt(numerator / denominator)
+    return eta
+
+"""
+cramers_v: calculates a correlation coefficient between two categorical variables x and y. 
+
+@output: correlation coefficient between 0 and 1
+"""
+def cramers_v(x, y):
+    confusion_matrix = pd.crosstab(x,y)
+    chi2 = stats.chi2_contingency(confusion_matrix)[0]
+    n = confusion_matrix.sum().sum()
+    phi2 = chi2/n
+    r,k = confusion_matrix.shape
+    phi2corr = max(0, phi2-((k-1)*(r-1))/(n-1))
+    rcorr = r-((r-1)**2)/(n-1)
+    kcorr = k-((k-1)**2)/(n-1)
+    return np.sqrt(phi2corr/min((kcorr-1),(rcorr-1)))
 
 """
 create_weekly_cart_df: creates a dataframe with average weekly quantities of each label for each household
@@ -86,6 +117,22 @@ def df_weekly_spending(df_trans):
     mean_budget_week.index.name = 'household_key'
     
     return mean_budget_week 
+
+
+"""
+mean_yearly_spending: calculates the mean of yearly spending per household
+@input: 
+- budget_first_year, budget_second_year: spending per household for year 1 and 2
+"""
+def mean_yearly_spending(budget_first_year, budget_second_year):
+    mean_yearly_spend = budget_first_year.join(budget_second_year, lsuffix='_1')
+    
+    mean_yearly_spend['mean yearly spending'] = mean_yearly_spend.mean(axis=1)
+    
+    mean_yearly_spend = mean_yearly_spend.drop(
+        ['yearly spending', 'yearly spending_1'], axis=1)
+    return mean_yearly_spend
+
 
 """
 spending_per_household_per_trans: creates a new dataframe with the spending per household 
