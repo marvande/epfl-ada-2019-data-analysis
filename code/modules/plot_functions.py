@@ -150,7 +150,7 @@ pair_corr_plot: plots a pair plot with the scatter plots and correlation coeffic
 - correlation_function : the correlation function which is used 
 @output: see above. 
 """ 
-def pair_corr_plot(to_be_plotted, correlation_function = corr_function_plot):
-    fig = sns.pairplot(to_be_plotted)
+def pair_corr_plot(to_be_plotted, correlation_function = corr_function_plot, hue = None):
+    fig = sns.pairplot(to_be_plotted, hue)
     fig = fig.map_offdiag(correlation_function)
 
