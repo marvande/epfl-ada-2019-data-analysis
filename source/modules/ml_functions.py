@@ -32,7 +32,7 @@ def decision_tree(target, features, data):
         X, y, test_size=0.25, random_state=RSEED)
 
     #Don't remove too much for testing as we don't have that many datapoints: 
-    print(f"The training data has shape: " + str(shape(X_train)))
+    #print(f"The training data has shape: " + str(shape(X_train)))
 
     # We normalize the data, since it is good practice:
     scaler = preprocessing.StandardScaler().fit(X_train)
@@ -87,7 +87,6 @@ def random_forest(target, features, data):
     @output: returns the accuracy of the model and the AUC score.
     """
     tot_columns = np.append(features, target)
-    print(tot_columns)
     X = data[tot_columns]
 
     y = np.array(X[target])
@@ -101,7 +100,7 @@ def random_forest(target, features, data):
         X, y, test_size=0.25, random_state= RSEED)
 
     #Don't remove too much for testing as we don't have that many datapoints:
-    print(f"The training data has shape: " + str(shape(X_train)))
+    #print(f"The training data has shape: " + str(shape(X_train)))
 
     # We normalize the data, since it is good practice:
     scaler = preprocessing.StandardScaler().fit(X_train)

@@ -1,5 +1,6 @@
 # FUNCTIONS DOCUMENTATION
 
+## Functions used on demographics:
 ###  order_hh_dem
 Renders a column in the demographic dataframe categorical according to a specific ordering. 
 *  input: 
@@ -18,6 +19,8 @@ def order_hh_dem(hh_dem, label, ordered_label):
     return ordered_column 
 ```
 -----------------------------
+
+## Machine learning functions: 
 ### descision_tree
 Trains a decision tree model on data.
 *   input:
@@ -170,6 +173,8 @@ def random_forest(target, features, data):
     return model
 ```
 ---------------------------------
+
+## Functions to plot: 
 ### cat_count_plot
 Plots the number of occurences per category in to_be_plotted.
 *   input: 
@@ -378,6 +383,8 @@ def plot_demographics(hh_demographic_fxd):
     plt.show()
 ```
 --------------------------------------------
+
+## Functions used on transactions:
 ### total_per_year
 Calculates the total amount spent per household over a year (year 1 or 2)
 *   input: 
