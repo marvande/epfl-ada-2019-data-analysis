@@ -1,5 +1,5 @@
 # Source: 
-This folder contains all notebooks. You normally only need to run the main notebook. For this you need the data available from this google drive: https://drive.google.com/drive/folders/105Wt4yOG6wWB9nhq2QOGGY8JKT2J1ENV?usp=sharing
+This folder contains all notebooks. You normally only need to run the main notebook. For this you need the data available from this [google drive]: (https://drive.google.com/drive/folders/105Wt4yOG6wWB9nhq2QOGGY8JKT2J1ENV?usp=sharing)
 The data from the drive should be put in the **saved_structures** folder. 
 Otherwise you need to run the product notebook before which takes approximately 30 minutes. 
 
