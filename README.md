@@ -39,17 +39,26 @@ Between milestone 2 and 3, we will really concentrate on the prediction analysis
 ### Understanding our git repo:
 There is a README in each folder explaining its content in details. What you need to know is the following: 
 - doc: contains all documentaion
-- source: all notebooks (including the main.py)
--data: should be empty on github but should contain the dunnhumby dataset locally on your computer. 
-Everything else needed to understand how to run and get our results is in the README of code. 
+- source: contains all notebooks (including the main.py)
+- data: should be empty on github but should contain the dunnhumby dataset locally on your computer. 
+Everything else needed to understand how to run and get our results is in the README of source. 
+
+The file which contains our analysis is the **main.py**. If you read only one, this must be the one for you to understand our analysis.
 
 #### Next steps till milestone 3: 
 For the next milestone, we are going to look at the following to try and improve our results:
 
-- because demographic information is not available for all households present in the transaction data but as there was some correlation between product quantities, we could try to find out whether those are accentuated in the whole transaction data (we limited ourselves to households with demographic information above)
-- explore further the correlation between product quantities
-- make a boxplot of correlation values (for all 17 labels) per demographic category to look at the correlation distribution
-- normalize the product quantities to the number of people in the household
-- create price classes for products and look for correlation between income and price classes
-- look at the proportion of labels bought for each income class (we suppose they should be different)
-- try to improve our prediction model by using PCA. Otherwise, we need to pursue another direction as right now it does not seem possible to predict anything from shopping quantities
+- We focused until now on understanding the relationship between the demographic data and the transactions of the consumers. Thus, we had to filter out a lot of data because demographic data was only available for approximately one third of the households. Now, we saw that there are some correlations between product quantities, and we would like to know if they are accentuated in the whole transaction data.
+- We would also like to see if there are some kind of normalizations which would make sense. For example, normalize the product quantities to the number of people in the household
+- Analyse a boxplot of correlation values (for all 17 labels) per demographic category to look at the correlation distributions.
+
+To try to look at the data from a different point of view, we thought at the following points:
+
+- We created classes and labels for the type of products which are present in the transaction data. Now, we would like to know if we can find some correlations between demographic data and price classes for products. Especially, we would expect to see a correlation between price classes and income. 
+- We could also try to look at the proportions. For example, we expect that the proportion of labels bought for each income class will be different.
+- We would like to try to improve our prediction model using PCA. Otherwise, we need to pursue another direction, because right now it does not seem possible to predict anything from shopping quantities. You may recall that we didn't use all the tables of the dataset, so we could imagine for example looking into the influence of the marketing (with the coupons) on shopping quantities.
+
+With those objectives, find below a sketch of our planning for the next project milestone:
+- Until **02.12** : try to improve our analysis
+- Until **09.12** : if the analysis didn't work, try another point of view, or go in depth in our analysis if it is worth it
+- Until **20.12** : clean the code, and write the report for milestone 3. 
