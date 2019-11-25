@@ -514,7 +514,7 @@ Calculates the mean of yearly spending per household
 *   input: 
     -   *[pd.Series]*  **budget_first_year, budget_second_year**: spending per household for year 1 and 2
     
-*   input: 
+*   output: 
     -   mean of the yearly spending per household
     
 ```python
