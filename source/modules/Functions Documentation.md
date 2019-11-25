@@ -98,7 +98,7 @@ def multiclass_roc_auc_score(y_test, y_pred, average="macro"):
 ```
 -----------------------------------------
 
-### random_forest:
+### random_forest
 Trains a random forest model on data.
 *   input:
     -   *[string]*  **target**: column name of data that is the target
@@ -170,17 +170,17 @@ def random_forest(target, features, data):
     return model
 ```
 ---------------------------------
-### 
+### cat_count_plot
+Plots the number of occurences per category in to_be_plotted.
+*   input: 
+    -   *[pd.Series]*  **to_be_plotted**: categorical data (e.g. columns of incomes for all households)
+    -   *[string]*  **title**: the title we want to give the plot
+*   output: 
+    -   plots the number of occurences per category
 
 ```python 
 def cat_count_plot(to_be_plotted, title):
-    """
-    Plots the number of occurences per category in to_be_plotted.
-    @input: 
-    - [pd.Series] to_be_plotted: categorical data (e.g. columns of incomes for all households)
-    - [string] title: the title we want to give the plot
-    @output: plots the number of occurences per category
-    """
+   
     fig, axs = plt.subplots(1,1, figsize = (18,6))
 
     sns.countplot(to_be_plotted, ax = axs)
@@ -189,17 +189,18 @@ def cat_count_plot(to_be_plotted, title):
     axs.set(title = title)
 ```
 -------------------------
+### corr_function_plot
+Function used in pair_corr_plot. Calculates the correlation between 2 variables and adds it on the scatter plot. 
+*   input: 
+    -   [continuous variable] x: first variable
+    -   [continuous variable] y: second variable
+    -   **kwargs**: additional arguments for function plotting 
+*   output: 
+    -   show correlation on scatter plot. 
 
 ```python
 def corr_function_plot(x, y, **kwargs):
-    """
-    Function used in pair_corr_plot. Calculates the correlation between 2 variables and adds it on the scatter plot. 
-    @input: 
-    - [continuous variable] x: first variable
-    - [continuous variable] y: second variable
-    - **kwargs: additional arguments for function plotting 
-    @output: see above. 
-    """ 
+    
     # Calculate the value: 
     coef = np.corrcoef(x, y)[0][1]
     # Make the label: 
