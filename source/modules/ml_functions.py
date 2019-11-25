@@ -60,7 +60,8 @@ def decision_tree(target, features, data):
     print(f'Test ROC AUC Score: {multiclass_roc_auc_score(y_test, tree.predict(X_test))}')
     print(f'Baseline ROC AUC: {multiclass_roc_auc_score(y_test, [1 for _ in range(len(y_test))])}')
     
-    
+    return tree 
+
 def multiclass_roc_auc_score(y_test, y_pred, average="macro"):
     """
     Calculates an AUC score for a multiclass model as the score method from metrics does not work for multiclass. 
@@ -143,3 +144,4 @@ def random_forest(target, features, data):
     print(
         f'Baseline ROC AUC: {multiclass_roc_auc_score(y_test, [1 for _ in range(len(y_test))])}'
     )
+    return model

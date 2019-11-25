@@ -111,7 +111,6 @@ def double_plot_box_dist(to_be_plotted1, to_be_plotted2, titles, xlabels):
     axes[1,1].set(xlabel = xlabels[1])
 
     plt.show()
-    
 
 def pair_corr_plot(to_be_plotted, correlation_function = corr_function_plot, hue = None):
     """
@@ -124,7 +123,6 @@ def pair_corr_plot(to_be_plotted, correlation_function = corr_function_plot, hue
     fig = sns.pairplot(to_be_plotted, hue)
     fig = fig.map_offdiag(correlation_function)
     
-
 def plot_box_dist(to_be_plotted, title, xlabel):
     """
     Plots the boxplot and distribution of an entered series with shared x axis. 
@@ -152,5 +150,39 @@ def plot_box_dist(to_be_plotted, title, xlabel):
 
     axes[0].set(xlabel = '', title = title)
     axes[1].set(xlabel = xlabel)
+
+    plt.show()    
+
+def plot_demographics(hh_demographic_fxd):
+    """
+    Plots the number of households per category for the household dataframe.
+    @input:
+    - [pd.DataFrame] hh_demographic_fxd: dataframe with household data
+    
+    @output: categorical histograms for each category
+    """
+    fig, axs = plt.subplots(2, 3, figsize=(18, 13))
+
+    sns.countplot(hh_demographic_fxd['AGE_DESC'], ax=axs[0, 0])
+
+    sns.countplot(hh_demographic_fxd['MARITAL_STATUS_CODE'], ax=axs[0, 1])
+
+    sns.countplot(hh_demographic_fxd['INCOME_DESC'], ax=axs[1, 0])
+    axs[1, 0].set_xticklabels(axs[1, 0].get_xticklabels(),
+                              rotation=45,
+                              horizontalalignment='right')
+
+    sns.countplot(hh_demographic_fxd['HOMEOWNER_DESC'], ax=axs[1, 1])
+    axs[1, 1].set_xticklabels(axs[1, 1].get_xticklabels(),
+                              rotation=45,
+                              horizontalalignment='right')
+
+    sns.countplot(hh_demographic_fxd['KIDS_DESC'], ax=axs[1, 2])
+    axs[1, 2].set_xticklabels(axs[1, 2].get_xticklabels(),
+                              rotation=45,
+                              horizontalalignment='right')
+
+    sns.countplot(hh_demographic_fxd['HOUSEHOLD_SIZE_DESC'], ax=axs[0, 2])
+
 
     plt.show()
