@@ -44,4 +44,12 @@ There is a README in each folder explaining its content in details. What you nee
 Everything else needed to understand how to run and get our results is in the README of code. 
 
 #### Next steps till milestone 3: 
-A COMPLETER. 
+For the next milestone, we are going to look at the following to try and improve our results:
+
+- because demographic information is not available for all households present in the transaction data but as there was some correlation between product quantities, we could try to find out whether those are accentuated in the whole transaction data (we limited ourselves to households with demographic information above)
+- explore further the correlation between product quantities
+- make a boxplot of correlation values (for all 17 labels) per demographic category to look at the correlation distribution
+- normalize the product quantities to the number of people in the household
+- create price classes for products and look for correlation between income and price classes
+- look at the proportion of labels bought for each income class (we suppose they should be different)
+- try to improve our prediction model by using PCA. Otherwise, we need to pursue another direction as right now it does not seem possible to predict anything from shopping quantities
