@@ -36,6 +36,12 @@ Thus we plan to follow the programme below:
 If time permits it, we will prepare the dataset for the clustering and eventually begin it.
 Between milestone 2 and 3, we will really concentrate on the prediction analysis.
 
-### Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+### Understanding our git repo:
+There is a README in each folder explaining its content in details. What you need to know is the following: 
+- doc: contains all documentaion
+- source: all notebooks (including the main.py)
+-data: should be empty on github but should contain the dunnhumby dataset locally on your computer. 
+Everything else needed to understand how to run and get our results is in the README of code. 
 
+#### Next steps till milestone 3: 
+A COMPLETER. 
