@@ -5,26 +5,31 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 
 #imports: 
-import pandas as pd
-import matplotlib.pyplot as plt
 from pylab import *
 import os
-import seaborn as sns
-from scipy import stats
 
 
+def decision_tree(target, features, data):
+    """
+    Trains a deicsion tree model on data.
+    @input:
+        - [string] target: column name of data that is the target
+        - [array of string] features: column names of data that correspond to the features
+    @output: returns the accuracy of the model and the AUC score.
+    """
+    tot_columns = np.append(features, target)
 
-def decision_tree(target,features,dem_trans_df):
-    tot_columns = np.append(features,target)
-    print(tot_columns)
-    X = dem_trans_df[tot_columns]
+    X = data[tot_columns]
     
     y = np.array(X[target])
 
     X = np.array(X.drop(target, axis=1))
 
+    # Set random seed to ensure reproducible runs
+    RSEED = 50
+    
     X_train, X_test, y_train, y_test = model_selection.train_test_split(
-        X, y, test_size=0.25, random_state=42)
+        X, y, test_size=0.25, random_state=RSEED)
 
     #Don't remove too much for testing as we don't have that many datapoints: 
     print(f"The training data has shape: " + str(shape(X_train)))
@@ -48,36 +53,51 @@ def decision_tree(target,features,dem_trans_df):
     print(
         f'Decision tree has {tree.tree_.node_count} nodes with maximum depth {tree.tree_.max_depth}.'
     )
-
     print(f'Model Accuracy on training set: {tree.score(X_train, y_train)}')
     print(f'Model Accuracy on test set: {metrics.accuracy_score(y_test, tree.predict(X_test))}')
     print('')
     print(f'Train ROC AUC Score: {multiclass_roc_auc_score(y_train, tree.predict(X_train))}')
-    print(f'Train ROC AUC Score: {multiclass_roc_auc_score(y_test, tree.predict(X_test))}')
+    print(f'Test ROC AUC Score: {multiclass_roc_auc_score(y_test, tree.predict(X_test))}')
     print(f'Baseline ROC AUC: {multiclass_roc_auc_score(y_test, [1 for _ in range(len(y_test))])}')
     
     
-#Because auc score from metrics somehow does not work on multiclass:
 def multiclass_roc_auc_score(y_test, y_pred, average="macro"):
+    """
+    Calculates an AUC score for a multiclass model as the score method from metrics does not work for multiclass. 
+    @input: 
+    - [array] y_test: true labels
+    - [array] y_pred: predicted labels from model
+    """
     lb = preprocessing.LabelBinarizer()
     lb.fit(y_test)
     y_test = lb.transform(y_test)
     y_pred = lb.transform(y_pred)
+    
     return metrics.roc_auc_score(y_test, y_pred, average=average)
 
 
 #Random forest:
-def random_forest(target, features,dem_trans_df):
+def random_forest(target, features, data):
+    """
+    Trains a random forest model on data.
+    @input:
+        - [string] target: column name of data that is the target
+        - [array of string] features: column names of data that correspond to the features
+    @output: returns the accuracy of the model and the AUC score.
+    """
     tot_columns = np.append(features, target)
     print(tot_columns)
-    X = dem_trans_df[tot_columns]
+    X = data[tot_columns]
 
     y = np.array(X[target])
 
     X = np.array(X.drop(target, axis=1))
-
+    
+    # Set random seed to ensure reproducible runs
+    RSEED = 50
+    
     X_train, X_test, y_train, y_test = model_selection.train_test_split(
-        X, y, test_size=0.25, random_state=42)
+        X, y, test_size=0.25, random_state= RSEED)
 
     #Don't remove too much for testing as we don't have that many datapoints:
     print(f"The training data has shape: " + str(shape(X_train)))
@@ -89,9 +109,6 @@ def random_forest(target, features,dem_trans_df):
 
     #Normalize the test set with the same normalizer as the training:
     X_test = scaler.transform(X_test)
-
-    # Set random seed to ensure reproducible runs
-    RSEED = 50
 
     # Create the model with 100 trees
     model = RandomForestClassifier(n_estimators=100,
@@ -121,7 +138,7 @@ def random_forest(target, features,dem_trans_df):
         f'Train ROC AUC Score: {multiclass_roc_auc_score(y_train, model.predict(X_train))}'
     )
     print(
-        f'Train ROC AUC Score: {multiclass_roc_auc_score(y_test, model.predict(X_test))}'
+        f'Test ROC AUC Score: {multiclass_roc_auc_score(y_test, model.predict(X_test))}'
     )
     print(
         f'Baseline ROC AUC: {multiclass_roc_auc_score(y_test, [1 for _ in range(len(y_test))])}'

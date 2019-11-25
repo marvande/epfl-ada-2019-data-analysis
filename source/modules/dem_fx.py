@@ -8,14 +8,16 @@ import os
 import seaborn as sns
 from scipy import stats
 
-"""
-order_hh_dem: renders a column in the demographic dataframe categorical according to a specific ordering. 
-@input: 
-- hh_dem: demographic dataframe
-- label: column name
-- ordered_label: ordering for the categorical variables
-"""
+
 def order_hh_dem(hh_dem, label, ordered_label):
+    """
+    Renders a column in the demographic dataframe categorical according to a specific ordering. 
+    @input: 
+    - [pd.DataFrame] hh_dem: demographic dataframe
+    - [string] label: column name
+    - [list of string] ordered_label: ordering for the categorical variables
+    @output: outputs a pd.Categorical ordered column. 
+    """
     ordered_column = pd.Categorical(hh_dem[label],
                       ordered = True,
                       categories = ordered_label)

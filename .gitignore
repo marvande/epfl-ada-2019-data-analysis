@@ -3,8 +3,8 @@
 
 #Original (BIG) dataframes
 data/dunnhumby_complete_csv/
-code/.ipynb_checkpoints/
-code/modules/__pycache__/
+source/.ipynb_checkpoints/
+source/modules/__pycache__/
 *.py[cod]
 #Things to avoid generally:
 #Can remove the csv if we want to add dataframes
