@@ -7,7 +7,7 @@ demographic info for a certain portion of households.
 
 Attributes: 
 - HOUSEHOLD_KEY : identifies each household, unique
-- AGE_DESC: estimated age range
+- AGE_DES: estimated age range
 - MARITAL_STATUS_CODE: A -> Married, B -> Single, C -> Unknown
 - INCOME_DESC : Household income
 - HOMEOWNER_DESC: Homeowner, renter, etc
@@ -41,44 +41,9 @@ Attributes:
 - PRODUCT_ID: unique, identifies product
 - DEPARMENT: groups similar products together
 - COMMODITY_DESC: groups similar products together at a lower level
-- SUB_COMMODITY_DESC: groups similar products together at the lowest level
+- SUB_COMMODITY_DESC: groups similar products together at the lowest level. 
 - MANUFACTURER: code that links products with the same manufacturer together 
 - BRAND: indicates private or national label brand
 - CURR_SIZE_OF_PRODUCT: indicates package size (not available for all) 
 
-## updated_prod:
-???
 
-## trans_clean:
-clean version of transaction_data, useless departments are discarded.
-
-## hh_demographic_fix_hhcomp:
-fixed version of hh-demographic.
-- HOUSEHOLD_KEY : identifies each household, unique
-- AGE_DESC: estimated age range
-- MARITAL_STATUS_CODE: M -> Married, S -> Single
-- INCOME_DESC : Household income
-- HOMEOWNER_DESC: Homeowner, renter, etc
-- HOUSEHOLD_SIZE_DESC: Size of household up to 5+
-- KIDS_DESC: Number of children present up to 3+
-
-## hh_spendig:
-demographic data frame where we add mean yearly budget and mean weekly budget
-- hh_demographic_fix_hhcomp COLUMNS
-- mean weekly spending
-- mean yearly spending
-
-## weekly_cart_df:
-dataframe with household ID and weekly purchase frequencies for every product LABEL
-- HOUSEHOLD_KEY
-- PRODUCE_QUANT
-- HOUSEHOLDS_QUANT
-- CONDIMENTS_QUANT
-...
-
-## time_per_hh:
-dataframe with household ID and transaction times and average transaction time
-- HOUSEHOLD_KEY
-- transaction_time_per_hh
-- avg_transaction_time
-- avg_transaction_time_in_seconds
