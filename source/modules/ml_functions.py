@@ -109,6 +109,34 @@ def observe_clusers(label, clustered_households, labelled_prod, quantities):
     print(labelled_prod.loc[product_id])
     print('')
 
+#Looks at the products in the clusters: 
+def observe_clusers_departments(label, clustered_households, labelled_prod, quantities, give_clusters = False):
+    cluster = clustered_households[clustered_households.labels ==
+                                   label].set_index('household_key')
+    cluster = quantities.join(cluster,
+                              on='household_key').dropna().drop('labels',
+                                                                axis=1)
+    products_cluster = []
+    for i in cluster.index:
+        products_cluster.append(
+            cluster.loc[i][cluster.loc[i].apply(lambda x: x > 0.0)])
+    products_cluster = pd.DataFrame(data=products_cluster, index=cluster.index)
+    products_cluster = products_cluster.fillna(0.0)
+    #At least half of the households bought the same product ?
+    number_households = len(products_cluster.index)
+    
+    if give_clusters: 
+        print('Cluster ' + str(label) + ':')
+        print('')
+        print("There are %d households in this cluster" % number_households)
+        print('')
+        print('Average and median quantity of each department:')
+        print('Median:')
+        print(products_cluster.median())
+        print('')
+    return products_cluster.median()
+
+
 #Random forest:
 def random_forest(target, features, data):
     """
