@@ -14,9 +14,8 @@ analytics-id:       "default"
 github:             marvande/epfl-ada-2019-project-bubble582
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+location:           EPFL, Lausanne
+email:              marijn.vandermeer@epfl.ch # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
 background_image:   /images/bg.jpg
