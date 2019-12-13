@@ -123,6 +123,39 @@ def pair_corr_plot(to_be_plotted, correlation_function = corr_function_plot, hue
     fig = sns.pairplot(to_be_plotted, hue)
     fig = fig.map_offdiag(correlation_function)
     
+def pie_plot_labels(df):
+    #Look at proportions:
+    medians = []
+
+    labels = ['VEGETABLES_QUANT', 'FRUIT_QUANT',
+       'MEAT & SEAFOOD_QUANT', 'HOUSEHOLDS_QUANT',
+       'COOKIES SNACKS & CANDY _QUANT', 'CONDIMENTS/SPICES & BAKE_QUANT',
+       'DAIRY_QUANT', 'BEVERAGES_QUANT']
+
+    for label in labels:
+        medians.append(df[label].median())
+
+    #add colors
+    colors = ['#800026','#bd0026','#e31a1c','#fc4e2a','#fd8d3c','#feb24c','#fed976',
+    '#ffeda0','#ffffcc']   
+
+    medians = pd.Series(index = labels, data = medians,)
+
+    #explsion
+    explode = (0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05)
+    fig, ax1 = plt.subplots(1,1)
+    ax1.pie(medians, labels = labels,autopct='%1.1f%%', colors = colors,startangle=90, pctdistance=0.85, explode = explode)
+    #draw circle
+    centre_circle = plt.Circle((0,0),0.70,fc='white')
+    fig = plt.gcf()
+    fig.gca().add_artist(centre_circle)
+
+    # Equal aspect ratio ensures that pie is drawn as a circle
+    ax1.axis('equal')  
+    plt.tight_layout()
+    plt.show()
+    
+    
 def plot_box_dist(to_be_plotted, title, xlabel):
     """
     Plots the boxplot and distribution of an entered series with shared x axis. 

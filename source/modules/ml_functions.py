@@ -7,6 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 #imports: 
 from pylab import *
 import os
+import pandas as pd
 
 
 def decision_tree(target, features, data):
@@ -76,6 +77,65 @@ def multiclass_roc_auc_score(y_test, y_pred, average="macro"):
     
     return metrics.roc_auc_score(y_test, y_pred, average=average)
 
+#Looks at the products in the clusters: 
+def observe_clusers(label, clustered_households, labelled_prod, quantities):
+    cluster = clustered_households[clustered_households.labels ==
+                                   label].set_index('household_key')
+    cluster = quantities.join(cluster,
+                              on='household_key').dropna().drop('labels',
+                                                                axis=1)
+    products_cluster = []
+    for i in cluster.index:
+        products_cluster.append(
+            cluster.loc[i][cluster.loc[i].apply(lambda x: x > 0.0)])
+    products_cluster = pd.DataFrame(data=products_cluster, index=cluster.index)
+    products_cluster = products_cluster.fillna(0.0)
+
+    #Columns with products bought by at least 2/3 of the households in this cluster ?
+    #Count the number of non zero values for each column:
+    non_zero_products = products_cluster.astype(bool).sum(axis=0)
+
+    #At least half of the households bought the same product ?
+    number_households = len(products_cluster.index)
+    print('Cluster ' + str(label) + ':')
+    print('')
+    print("There are %d households in this cluster" % number_households)
+    non_zero_products = non_zero_products[non_zero_products.apply(
+        lambda x: x > number_households / 3)]
+    print('')
+    #See only one product: which one ?
+    product_id = non_zero_products.index
+
+    print(labelled_prod.loc[product_id])
+    print('')
+
+#Looks at the products in the clusters: 
+def observe_clusers_departments(label, clustered_households, labelled_prod, quantities, give_clusters = False):
+    cluster = clustered_households[clustered_households.labels ==
+                                   label].set_index('household_key')
+    cluster = quantities.join(cluster,
+                              on='household_key').dropna().drop('labels',
+                                                                axis=1)
+    products_cluster = []
+    for i in cluster.index:
+        products_cluster.append(
+            cluster.loc[i][cluster.loc[i].apply(lambda x: x > 0.0)])
+    products_cluster = pd.DataFrame(data=products_cluster, index=cluster.index)
+    products_cluster = products_cluster.fillna(0.0)
+    #At least half of the households bought the same product ?
+    number_households = len(products_cluster.index)
+    
+    if give_clusters: 
+        print('Cluster ' + str(label) + ':')
+        print('')
+        print("There are %d households in this cluster" % number_households)
+        print('')
+        print('Average and median quantity of each department:')
+        print('Median:')
+        print(products_cluster.median())
+        print('')
+    return products_cluster.median()
+
 
 #Random forest:
 def random_forest(target, features, data):
@@ -144,3 +204,4 @@ def random_forest(target, features, data):
         f'Baseline ROC AUC: {multiclass_roc_auc_score(y_test, [1 for _ in range(len(y_test))])}'
     )
     return model
+
