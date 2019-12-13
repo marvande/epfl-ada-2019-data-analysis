@@ -6,7 +6,7 @@ excerpt: "Small excerpt"
 image: "/images/pic07.jpg"
 ---
 
-## How to Use This Theme
+## Abstract
 Just go ahead and read up on [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
 
 Download this repository [here](https://github.com/iwiedenm/jekyll-theme-massively) and save it to any folder you want.
