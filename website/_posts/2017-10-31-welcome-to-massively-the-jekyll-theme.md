@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Massively: The Jekyll Theme!"
+title:  "Tell me what you buy, I will tell you who you are. A data story."
 date:   2017-10-31
-excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
-image: "/images/pic02.jpg"
+excerpt: "Small excerpt"
+image: "/images/pic07.jpg"
 ---
 
 ## How to Use This Theme
