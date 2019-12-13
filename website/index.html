@@ -53,8 +53,8 @@ sitemap:
 							<article class="post featured">
 								<header class="major">
 									<h2><a href="#">Tell me what you buy, I will tell you who you are.</a></h2>
-									<p>Applied Data Analysis EPFL, Autumn 2019  
-									<br />
+									<h3><a href="#">Applied Data Analysis EPFL, Autumn 2019</a></h3>
+									<p>  
 									Group Bubble582 under supervision of Robert West
                      <br />
                     </p>
@@ -97,6 +97,42 @@ sitemap:
 
 							</section>
 
+							<!-- Team Section -->
+								<section id="team" class="team">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-12 text-center">
+												<h2 class="section-heading">Our Amazing Team</h2>
+											</div>
+										</div>
+										<div class="row">
+											{% for member in site.people %}
+											<div class="col-sm-4">
+												<div class="team-member">
+													<img src="images/{{ member.pic }}.jpg" class="img-responsive img-circle" width="210" height="210" alt="">
+													<h4>{{ member.name }}</h4>
+													<p class="text-muted">{{ member.position }}</p>
+													<ul class="list-inline social-buttons">
+														{% for network in member.social %}
+														<li>
+															<a href="{{ network.url }}">
+																<i class="fa fa-{{ network.title }}"></i>
+															</a>
+														</li>
+														{% endfor %}
+
+													</ul>
+												</div>
+											</div>
+											{% endfor %}
+										</div>
+										<div class="row">
+											<div class="col-lg-8 col-lg-offset-2 text-center">
+											</div>
+										</div>
+									</div>
+								</section>
+								
 						<!-- Footer -->
 							<footer>
                 <ul class="actions">

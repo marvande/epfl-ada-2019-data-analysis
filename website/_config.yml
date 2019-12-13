@@ -17,6 +17,35 @@ github:             marvande/epfl-ada-2019-project-bubble582
 location:           EPFL, Lausanne
 email:              marijn.vandermeer@epfl.ch # change this to your email to receive free emails for your contact submissions via Slapform.com
 
+# Team names, titles and social links
+people:
+- name: Lou Locci
+  pic: 1
+  social:
+    - title: github
+      url: https://github.com/Loulocci
+
+- name: Amandine Goeffney
+  pic: 2
+  social:
+    - title: github
+      url: https://github.com/amandinegoffeney
+
+- name: Marijn van der Meer
+  pic: 3
+  social:
+    - title: github
+      url: https://github.com/marvande
+    - title: linkedin
+      url: https://www.linkedin.com/in/marijn-van-der-meer/
+
+- name: Marco Pietro Abrate
+  pic: 3
+  social:
+    - title: github
+      url: https://github.com/marcoabrate
+
+
 # Other
 background_image:   /images/bg.jpg
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
