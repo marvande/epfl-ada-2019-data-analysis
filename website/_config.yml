@@ -20,16 +20,20 @@ email:              marijn.vandermeer@epfl.ch # change this to your email to rec
 # Team names, titles and social links
 people:
 - name: Lou Locci
-  pic: 1
-  social:
-    - title: github
-      url: https://github.com/Loulocci
-
-- name: Amandine Goeffney
   pic: 2
   social:
     - title: github
+      url: https://github.com/Loulocci
+    - title: linkedin
+      url: https://www.linkedin.com/in/lou-locci-525350131/
+
+- name: Amandine Goffeney
+  pic: 1
+  social:
+    - title: github
       url: https://github.com/amandinegoffeney
+    - title: linkedin
+      url: https://www.linkedin.com/in/amandine-goffeney/
 
 - name: Marijn van der Meer
   pic: 3
@@ -40,10 +44,12 @@ people:
       url: https://www.linkedin.com/in/marijn-van-der-meer/
 
 - name: Marco Pietro Abrate
-  pic: 3
+  pic: 4
   social:
     - title: github
       url: https://github.com/marcoabrate
+    - title: linkedin
+      url: https://www.linkedin.com/in/marcoabrate/
 
 
 # Other
