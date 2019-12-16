@@ -1,150 +1,138 @@
----
-layout: null
-title: Jekyll Theme - Home Page - Massively
-description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.
-sitemap:
-    priority: 1.0
-    lastmod: 2017-11-02
-    changefreq: weekly
----
-<!DOCTYPE HTML>
+--- layout: null title: Jekyll Theme - Home Page - Massively description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to. sitemap: priority: 1.0 lastmod: 2017-11-02 changefreq: weekly ---
 <!--
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
   Jekyll integration by somiibo.com
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!DOCTYPE HTML>
 <html>
-	<head>
-    {% include head.html %}
+<head>
+	{% include head.html %}
+</head>
 
+<body class="is-loading">
 
-	</head>
-	<body class="is-loading">
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<!-- Intro -->
+		<div id="intro">
+			<h1>{{site.title}}</h1>
+			<h2>A datastory about grocery shoppers</h2>
+			<p>Let us take you on a journey into grocery shoppers</p>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
 
-				<!-- Intro -->
-					<div id="intro">
-            <h1>{{site.title}}</h1>
-						<h2>A datastory about grocery shoppers</h2>
-						<p>Let us take you on a journey into grocery shoppers</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+		<!-- Header -->
+		<header id="header">
+			<a href="{{ " / " | absolute_url }}" class="logo">{{site.title}}</a>
+		</header>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+		<!-- Nav -->
+		<nav id="nav">
+
+			{% include nav.html %}
+
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<h2><a href="#">Tell me what you buy, I will tell you who you are.</a></h2>
+					<h3><a href="#">Applied Data Analysis EPFL, Autumn 2019</a></h3>
+					<p>
+						Group Bubble582 under supervision of Robert West
+						<br />
+					</p>
+				</header>
+				<a href="#" class="image main"><img src="{{ " /images/pic06.jpg " | absolute_url }}" alt="" /></a>
+
+				<header>
+					<h2></h2>
+					<p>Introduction:</p>
+
+					<p>In this project we are focusing on the consumerism habits related to the customers profiles from an unknown shopping center in the US. Living in a time and age where every piece of our data is stored and analysed, we wonder what information retailers can gather and infer about us. This shopping center recorded up to 2 years of transactions for a group of voluntary customers. Based on this data, we seek to identify what are the links, if they exist, between the specific demographics (e.g. marital status, income, number of children, etc) and the purchase patterns. In other words, we would like to see how "easy" and how precise it is for retailers to infer a specific profile to their customers based on what they buy. Which of course would lead to target their different clients with adapted marketing. In other words, we want to evaluate how much of a target we actually are.</p>
+				</header>
+			</article>
+
+			<!-- Posts -->
+			<section class="posts">
+				{% for post in site.posts limit:1 %} {% assign mod3 = forloop.index | modulo: 3 %}
+				<article>
+					<header>
+						<span class="date">{{ post.date | date_to_string }}</span>
+						<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+					</header>
+					<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+					<p>{{ post.excerpt }}</p>
+					<ul class="actions">
+						<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				{% if mod3 == 0 %}
+				<article>
+					<header>
+						<h2><a href="#">Sponsored</a></h2>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
+				</article>
+				{% endif %} {% endfor %}
 
-            {% include nav.html %}
+			</section>
 
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Tell me what you buy, I will tell you who you are.</a></h2>
-									<h3><a href="#">Applied Data Analysis EPFL, Autumn 2019</a></h3>
-									<p>  
-									Group Bubble582 under supervision of Robert West
-                     <br />
-                    </p>
-								</header>
-								<a href="#" class="image main"><img src="{{ "/images/pic06.jpg" | absolute_url }}" alt="" /></a>
-                
-
-<header>
-	<h2></h2>
-	<p>Introduction:</p>
-
-<p>In this project we are focusing on the consumerism habits related to the customers profiles from an unknown shopping center in the US. Living in a time and age where every piece of our data is stored and analysed, we wonder what information retailers can gather and infer about us. This shopping center recorded up to 2 years of transactions for a group of voluntary customers. Based on this data, we seek to identify what are the links, if they exist, between the specific demographics (e.g. marital status, income, number of children, etc) and the purchase patterns. In other words, we would like to see how "easy" and how precise it is for retailers to infer a specific profile to their customers based on what they buy. Which of course would lead to target their different clients with adapted marketing. In other words, we want to evaluate how much of a target we actually are.</p>
-</header>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-                {% for post in site.posts limit:1 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
-  								<article>
-  									<header>
-  										<span class="date">{{ post.date | date_to_string }}</span>
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-                  {% if mod3 == 0 %}
-                  <article>
-  									<header>
-  										<h2><a href="#">Sponsored</a></h2>
-  									</header>
-
-  								</article>
-                  {% endif %}
-                {% endfor %}
-
-							</section>
-
-							<!-- Team Section -->
-								<section id="team" class="team">
-									<div class="container">
-										<div class="row">
-											<div class="col-lg-12 text-center">
-												<h2 class="section-heading">Our Amazing Team</h2>
-											</div>
-										</div>
-										<div class="row">
-											{% for member in site.people %}
-											<div class="col-sm-4">
-												<div class="team-member">
-													<img src="images/{{ member.pic }}.jpg" class="img-responsive img-circle" width="210" height="210" alt="">
-													<h4>{{ member.name }}</h4>
-													<p class="text-muted">{{ member.position }}</p>
-													<ul class="list-inline social-buttons">
-														{% for network in member.social %}
-														<li>
-															<a href="{{ network.url }}">
-																<i class="fa fa-{{ network.title }}"></i>
-															</a>
-														</li>
-														{% endfor %}
-
-													</ul>
-												</div>
-											</div>
-											{% endfor %}
-										</div>
-										<div class="row">
-											<div class="col-lg-8 col-lg-offset-2 text-center">
-											</div>
-										</div>
-									</div>
-								</section>
-								
-						<!-- Footer -->
-
+			<!-- Team Section -->
+			<section id="team" class="team">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<h2 class="section-heading">Our Amazing Team</h2>
+						</div>
 					</div>
+					<div class="row">
+						{% for member in site.people %}
+						<div class="col-sm-4">
+							<div class="team-member">
+								<img src="images/{{ member.pic }}.jpg" class="img-responsive img-circle" width="210" height="210" alt="">
+								<h4>{{ member.name }}</h4>
+								<p class="text-muted">{{ member.position }}</p>
+								<ul class="list-inline social-buttons">
+									{% for network in member.social %}
+									<li>
+										<a href="{{ network.url }}">
+											<i class="fa fa-{{ network.title }}"></i>
+										</a>
+									</li>
+									{% endfor %}
 
-				<!-- Footer -->
-        {% include foot.html %}
+								</ul>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+						</div>
+					</div>
+				</div>
+			</section>
 
-			</div>
+			<!-- Footer -->
 
-		<!-- Scripts -->
-		{% include scripts-main.html %}
-    {% include tracking.html %}
+		</div>
 
-	</body>
+		<!-- Footer -->
+		{% include foot.html %}
+
+	</div>
+
+	<!-- Scripts -->
+	{% include scripts-main.html %} {% include tracking.html %}
+
+</body>
+
 </html>
