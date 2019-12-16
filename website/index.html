@@ -85,18 +85,9 @@ sitemap:
   										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
   									</ul>
   								</article>
-                  {% if mod3 == 0 %}
-                  <article>
-  									<header>
-  										<h2><a href="#">Sponsored</a></h2>
-  									</header>
-
-  								</article>
-                  {% endif %}
                 {% endfor %}
-
 							</section>
-
+							
 							<!-- Team Section -->
 								<section id="team" class="team">
 									<div class="container">
@@ -109,9 +100,8 @@ sitemap:
 											{% for member in site.people %}
 											<div class="col-sm-4">
 												<div class="team-member">
-													<img src="images/{{ member.pic }}.jpg" class="img-responsive img-circle" width="210" height="210" alt="">
+													<img src="images/{{ member.pic }}.jpg" width="210" height="210" alt="">
 													<h4>{{ member.name }}</h4>
-													<p class="text-muted">{{ member.position }}</p>
 													<ul class="list-inline social-buttons">
 														{% for network in member.social %}
 														<li>
