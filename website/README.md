@@ -1,4 +1,17 @@
-# Massively
+# Notes about running this site locally on your computer: 
+- go into the directory and run: `bundle install`
+- Then: `bundle exec jekyll serve`
+- Open: [http://127.0.0.1:4000/][local]
+
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+# Notes about this theme: 
 > This is Massively, a text-heavy, article-oriented design built around a huge background
 image.
 
