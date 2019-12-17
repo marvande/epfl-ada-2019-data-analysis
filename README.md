@@ -1,7 +1,7 @@
 # epfl-ada-2019-project-bubble582
 
 ## Website: 
-[link](https://adabubble582.netlify.com/)
+[link](https://projectadabubble582.netlify.com)
 ## Tell me what you buy and I will tell you who you are
 
 ### Abstract
