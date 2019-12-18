@@ -1,7 +1,7 @@
 # Site
-title:              Tell me what you buy and I will tell you who you are
-bio:                'Project bio'
-description:        "Project description"
+title:              Massively
+bio:                'Jekyll version of the Massively theme by HTML5UP'
+description:        "Jekyll version of the Massively theme by HTML5UP"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
@@ -11,46 +11,15 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
-github:             marvande/epfl-ada-2019-project-bubble582
+twitter:            default
+facebook:           default
+instagram:          default
+github:             default
 
 # personal
-location:           EPFL, Lausanne
-email:              marijn.vandermeer@epfl.ch # change this to your email to receive free emails for your contact submissions via Slapform.com
-
-# Team names, titles and social links
-people:
-- name: Lou Locci
-  pic: 2
-  social:
-    - title: github
-      url: https://github.com/Loulocci
-    - title: linkedin
-      url: https://www.linkedin.com/in/lou-locci-525350131/
-
-- name: Amandine Goffeney
-  pic: 1
-  social:
-    - title: github
-      url: https://github.com/amandinegoffeney
-    - title: linkedin
-      url: https://www.linkedin.com/in/amandine-goffeney/
-
-- name: Marijn van der Meer
-  pic: 3
-  social:
-    - title: github
-      url: https://github.com/marvande
-    - title: linkedin
-      url: https://www.linkedin.com/in/marijn-van-der-meer/
-
-- name: Marco Pietro Abrate
-  pic: 4
-  social:
-    - title: github
-      url: https://github.com/marcoabrate
-    - title: linkedin
-      url: https://www.linkedin.com/in/marcoabrate/
-
+location:           Los Angeles, CA
+phone:              310-318-5555
+email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
 background_image:   /images/bg.jpg

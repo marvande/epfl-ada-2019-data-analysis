@@ -7,49 +7,49 @@
 -->
 <html>
 	<head>
-	    {% include head.html %}
-		</head>
-		<body class="is-loading">
+    {% include head.html %}
+	</head>
+	<body class="is-loading">
 
-			<!-- Wrapper -->
-				<div id="wrapper" class="fade-in">
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-					<!-- Header -->
-					<header id="header">
-						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-					</header>
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
 
-					<!-- Nav -->
-						<nav id="nav">
+				<!-- Nav -->
+					<nav id="nav">
 
-	            {% include nav.html %}
+            {% include nav.html %}
 
-						</nav>
+					</nav>
 
-					<!-- Main -->
-					<div id="main">
+				<!-- Main -->
+				<div id="main">
 
-						<!-- Post -->
-						<section class="post">
-							<p>{{content}}</p>
-						</section>
-
-						<!-- Footer -->
-							<footer>
-	              <ul class="actions">
-									<li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-	              </ul>
-							</footer>
-						</div>
+					<!-- Post -->
+					<section class="post">
+						<p>{{content}}</p>
+					</section>
 
 					<!-- Footer -->
-	        {% include foot.html %}
+						<footer>
+              <ul class="actions">
+								<li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
+              </ul>
+						</footer>
+					</div>
 
-				</div>
+				<!-- Footer -->
+        {% include foot.html %}
 
-				<!-- Scripts -->
-				{% include scripts-main.html %}
-				{% include tracking.html %}
+			</div>
 
-		</body>
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
 </html>
