@@ -123,7 +123,7 @@ def pair_corr_plot(to_be_plotted, correlation_function = corr_function_plot, hue
     fig = sns.pairplot(to_be_plotted, hue)
     fig = fig.map_offdiag(correlation_function)
     
-def pie_plot_labels(df):
+def pie_plot_labels(df,title):
     #Look at proportions:
     medians = []
 
@@ -145,6 +145,7 @@ def pie_plot_labels(df):
     explode = (0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05)
     fig, ax1 = plt.subplots(1,1)
     ax1.pie(medians, labels = labels,autopct='%1.1f%%', colors = colors,startangle=90, pctdistance=0.85, explode = explode)
+    ax1.set(title = title)
     #draw circle
     centre_circle = plt.Circle((0,0),0.70,fc='white')
     fig = plt.gcf()
