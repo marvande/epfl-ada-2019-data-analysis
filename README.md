@@ -7,28 +7,28 @@
 ### Abstract
 *A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?*
 
-We would like to analyse the Dunnhumby dataset. Living in a time and age where every piece of our data is stored and analysed; and being active consumers ourselves, we would like to see what informations retail chains can gather and infer about us knowing only our shopping habits. As transactions over two years of several households **and** their basic demographic profiles are provided, we want to see if there are any links and correlations between specific demographics (e.g. marital status, income, number of children, etc) and purchase patterns. Furthermore, if time permits it, we want to see if we can create a model predicting a consumer demographic profile from their shopping. Thus, we would like to see how "easy" and how precise it actually is for retailers to infer who their customer is by what they buy and target them with specific marketing. Basically, we want to know how much of a target we actually are. 
+We would like to analyse the Dunnhumby dataset. Living in a time and age where every piece of our data is stored and analysed; and being active consumers ourselves, we would like to see what information retail chains can gather and infer about us knowing only our shopping habits. As transactions over two years of several households **and** their basic demographic profiles are provided, we want to see if there are any links and correlations between specific demographics (e.g. marital status, income, number of children, etc) and purchase patterns. Furthermore, if time permits it, we want to see if we can create a model predicting a consumer demographic profile from their shopping. Thus, we would like to see how "easy" and how precise it actually is for retailers to infer who their customers are by what they buy and target them with specific marketing strategies. Basically, we want to know how much of a target we actually are. 
 
 ### Research questions
 *A list of research questions you would like to address during the project.*
-- What are the main shopping trends that we can identify in this data ? 
-- Can we relate shopping trends to specific demographic parameters ? 
-- Can we predict some of these demographic parameters (age, marital statute etc) with knowing the household's habbits? 
-- In the opposite way, can we predict household consumption behaviour with knowing its characteristics?
+- What are the main shopping trends that we can identify in this data? 
+- Can we relate shopping trends to specific demographic parameters? 
+- Can we predict some of these demographic parameters (age, marital status, etc) by knowing the households' habits? 
+- In the opposite way, can we predict households consumption behaviour by knowing their characteristics?
 - What accuracy in consumption prediction can the retailer obtain from a simple profile information? 
 
 ### Dataset
 *List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.*
--  The complete journey from Dunnhumby company: this dataset is made of 8 tables summarize the study of the company. Our group is going to focus mostly on HH-demographic, Transactions and Product tables. Dunnhumby also provides tables about specific marketing campains and their results. However our problematic is not marketing, but demographic oriented. That is why we decided not to include them in our analysis. We plan to extract households's habbits in term of consumption. That is to say, their choices  of products, the budget they inject in their groceries, their consumer behaviors (when, how much, how fast, how often etc.). 
+-  The complete journey from Dunnhumby company: this dataset is made of 8 tables and summarize the study of an unknown retailer. Our group is going to focus mostly on HH-demographic, Transactions and Product tables. Dunnhumby also provides tables about specific marketing campaigns and their results. However our problem is not marketing, but demographic oriented. That is why we decided not to include those other tables in our analysis. We plan to extract households' habits in term of consumption patterns. That is to say, their choices  of products, the money they sped in their groceries, their consumer behaviors (when, how much, how fast, how often they buy). 
 
-- We expect to identify a few number (3 to 6) of shopping trend clusters that we can relate to some household profiles and vice-versa. To enrich our results, we would like if time allows us, to try fitting a model to predict the consumption profile of a random household. 
+- We expect to identify a few number (3 to 6) of shopping trend clusters that we can relate to some household profiles and vice versa. To enrich our results, we would to train a model to predict the consumption profile of a random household. 
 
 
 
 ### A list of internal milestones up until project milestone 2
 *Add here a sketch of your planning for the next project milestone.*
 
-Until milestone 2, we plan to have done the cleaning of the data, and the analyses of the trends. 
+Until milestone 2, we plan to have done the cleaning of the data, and the analysis of the trends. 
 Thus we plan to follow the programme below:
 - Until **07.11** : Clean up the data and prepare the sets we want to keep for the analysis
 - Until **14.11** : Study the shopping trends in this dataset : identify the main trends and main household profiles. 
@@ -63,4 +63,4 @@ To try to look at the data from a different point of view, we thought at the fol
 With those objectives, find below a sketch of our planning for the next project milestone:
 - Until **02.12** : try to improve our analysis
 - Until **09.12** : if the analysis didn't work, try another point of view, or go in depth in our analysis if it is worth it
-- Until **20.12** : clean the code, and write the report for milestone 3. 
+- Until **20.12** : clean the code, and write the report for milestone 3.

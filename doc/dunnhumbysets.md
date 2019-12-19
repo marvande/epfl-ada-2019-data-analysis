@@ -46,8 +46,8 @@ Attributes:
 - BRAND: indicates private or national label brand
 - CURR_SIZE_OF_PRODUCT: indicates package size (not available for all) 
 
-## updated_prod:
-???
+## updated_prod_precise:
+clean version of product, the products are labeled in 32 different categories.
 
 ## trans_clean:
 clean version of transaction_data, useless departments are discarded.
@@ -75,10 +75,3 @@ dataframe with household ID and weekly purchase frequencies for every product LA
 - HOUSEHOLDS_QUANT
 - CONDIMENTS_QUANT
 ...
-
-## time_per_hh:
-dataframe with household ID and transaction times and average transaction time
-- HOUSEHOLD_KEY
-- transaction_time_per_hh
-- avg_transaction_time
-- avg_transaction_time_in_seconds
