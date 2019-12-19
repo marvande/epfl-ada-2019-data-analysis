@@ -100,6 +100,26 @@ def create_weekly_cart_df(trans_clean, participation_per_hh):
     
     return weekly_cart_df
 
+def create_weekly_dep_df(trans_clean, participation_per_hh):
+    
+    grouped_per_dep = pd.DataFrame(trans_clean.groupby(['DEPARTMENT','household_key']).sum())
+    index = trans_clean['household_key'].sort_values().unique()
+
+    weekly_dep_df = pd.DataFrame(index = index)
+    weekly_dep_df.index.name = 'household_key'
+
+    for dep in trans_clean['DEPARTMENT'].unique(): 
+        data = [grouped_per_dep.loc[dep, i]['QUANTITY']/(participation_per_hh['participation_length'][i])\
+                for i in grouped_per_dep.loc[dep].index]
+        
+        intermediary_df = pd.DataFrame(index = grouped_per_dep.loc[dep].index, data = {dep +'_QUANT': data})
+
+        weekly_dep_df = weekly_dep_df.join(intermediary_df)
+
+    #Fill NaN values with 0.0:
+    weekly_dep_df = weekly_dep_df.fillna(0.0)
+    
+    return weekly_dep_df
 
 def df_weekly_spending(df_trans):
     """
