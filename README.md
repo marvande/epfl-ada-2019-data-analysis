@@ -1,8 +1,10 @@
 # epfl-ada-2019-project-bubble582
 
-## Website: 
-[link](https://projectadabubble582.netlify.com)
+
 ## Tell me what you buy and I will tell you who you are
+### Data Story:
+- Our website: [link](https://projectadabubble582.netlify.com)
+- Our second repo that creates the website: [link](https://github.com/marvande/website_ada_bubble582)
 
 ### Abstract
 *A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?*
