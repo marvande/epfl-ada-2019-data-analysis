@@ -7,6 +7,14 @@ The website works on most browsers (google chrome and safari for sure). There ar
 - Our website: [link](https://projectadabubble582.netlify.com)
 - Our second repo that creates the website: [link](https://github.com/marvande/website_ada_bubble582)
 
+## Contributions of group members (sorry we forgot to do that): 
+### For milestone 3: 
+- Marijn: finishing up on notebook with last pahts of inquiries. Creation of website. Writing of data story. Interactive plots. 
+- Lou: Writing of data story. 
+- Amandine: Writing of data story.
+- Marco: Interactive plots and finishing up on notebook. 
+#### Note: everyone will work on the final presentation. 
+
 ### Abstract
 *A 150-word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project? *
 
