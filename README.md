@@ -8,7 +8,6 @@ The website works on most browsers (google chrome and safari for sure). There ar
 - Our second repo that creates the website: [link](https://github.com/marvande/website_ada_bubble582) 
 
 ### Abstract
-*A 150-word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project? *
 
 We would like to analyse the Dunnhumby dataset. Living in a time and age where every piece of our data is stored and analysed; and being active consumers ourselves, we would like to see what information retail chains can gather and infer about us knowing only our shopping habits. As transactions over two years of several households **and** their basic demographic profiles are provided, we want to see if there are any links and correlations between specific demographics (e.g. marital status, income, number of children, etc) and purchase patterns. Furthermore, if time permits it, we want to see if we can create a model predicting a consumer demographic profile from their shopping. Thus, we would like to see how "easy" and how precise it actually is for retailers to infer who their customers are by what they buy and target them with specific marketing strategies. Basically, we want to know how much of a target we actually are. 
 
