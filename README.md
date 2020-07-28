@@ -1,5 +1,6 @@
-# epfl-ada-2019-project-bubble582
-
+# epfl-ada-2019-project: 
+Course: Applied Data Analysis 2019-EPFL
+Prof: Robert West
 
 ## Tell me what you buy, and I will tell you who you are.
 ### Data Story:
